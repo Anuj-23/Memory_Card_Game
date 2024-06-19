@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+#outer {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+}
+
+#card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+    background-color: yellow;
+    padding: 1vw;
+}
+
+#control {
+    flex: 1;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1vw;
+}
+
+h3 {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#score {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5vw 0;
+}
+
+.card {
+    height: 10vw;
+    width: 10vw;
+    border: 2px solid red;
+    background-color: white;
+    margin: 0.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 2vw;
+    color: white;
+}
+.card.flipped {
+    background-color: red;
+    color: black;
+}
